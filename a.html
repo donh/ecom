@@ -1,0 +1,281 @@
+<!DOCTYPE HTML>
+<html lang="zh-TW">
+    <head>
+	<link rel="stylesheet" href="/home/daniel/src/bootstrap.css">
+    <style type="text/css">
+	h1 {color: black} 
+ 	button {color: red} 
+/* black */
+	.black {
+		color: #d7d7d7;
+		border: solid 1px #333;
+		background: #333;
+		background: -webkit-gradient(linear, left top, left bottom, from(#666), to(#000));
+		background: -moz-linear-gradient(top,  #666,  #000);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#666666', endColorstr='#000000');
+	}
+	.black:hover {
+		background: #000;
+		background: -webkit-gradient(linear, left top, left bottom, from(#444), to(#000));
+		background: -moz-linear-gradient(top,  #444,  #000);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#444444', endColorstr='#000000');
+	}
+	.black:active {
+		color: #666;
+		background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#444));
+		background: -moz-linear-gradient(top,  #000,  #444);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#666666');
+	}
+
+/* gray */
+	.gray {
+		color: #e9e9e9;
+		border: solid 1px #555;
+		background: #6e6e6e;
+		background: -webkit-gradient(linear, left top, left bottom, from(#888), to(#575757));
+		background: -moz-linear-gradient(top,  #888,  #575757);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#888888', endColorstr='#575757');
+	}
+	.gray:hover {
+		background: #616161;
+		background: -webkit-gradient(linear, left top, left bottom, from(#757575), to(#4b4b4b));
+		background: -moz-linear-gradient(top,  #757575,  #4b4b4b);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#757575', endColorstr='#4b4b4b');
+	}
+	.gray:active {
+		color: #afafaf;
+		background: -webkit-gradient(linear, left top, left bottom, from(#575757), to(#888));
+		background: -moz-linear-gradient(top,  #575757,  #888);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#575757', endColorstr='#888888');
+	}
+/* orange */
+	.orange {
+		color: #fef4e9;
+		border: solid 1px #da7c0c;
+		background: #f78d1d;
+		background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+		background: -moz-linear-gradient(top,  #faa51a,  #f47a20);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#faa51a', endColorstr='#f47a20');
+	}
+	.orange:hover {
+		background: #f47c20;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f88e11), to(#f06015));
+		background: -moz-linear-gradient(top,  #f88e11,  #f06015);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f88e11', endColorstr='#f06015');
+	}
+	.orange:active {
+		color: #fcd3a5;
+		background: -webkit-gradient(linear, left top, left bottom, from(#f47a20), to(#faa51a));
+		background: -moz-linear-gradient(top,  #f47a20,  #faa51a);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f47a20', endColorstr='#faa51a');
+	}
+
+/* red */
+	.red {
+		color: #faddde;
+		border: solid 1px #980c10;
+		background: #d81b21;
+		background: -webkit-gradient(linear, left top, left bottom, from(#ed1c24), to(#aa1317));
+		background: -moz-linear-gradient(top,  #ed1c24,  #aa1317);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#ed1c24', endColorstr='#aa1317');
+	}
+	.red:hover {
+		background: #b61318;
+		background: -webkit-gradient(linear, left top, left bottom, from(#c9151b), to(#a11115));
+		background: -moz-linear-gradient(top,  #c9151b,  #a11115);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#c9151b', endColorstr='#a11115');
+	}
+	.red:active {
+		color: #de898c;
+		background: -webkit-gradient(linear, left top, left bottom, from(#aa1317), to(#ed1c24));
+		background: -moz-linear-gradient(top,  #aa1317,  #ed1c24);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#aa1317', endColorstr='#ed1c24');
+	}
+/* green */
+	.green {
+		color: #e8f0de;
+		border: solid 1px #538312;
+		background: #64991e;
+		background: -webkit-gradient(linear, left top, left bottom, from(#7db72f), to(#4e7d0e));
+		background: -moz-linear-gradient(top,  #7db72f,  #4e7d0e);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#7db72f', endColorstr='#4e7d0e');
+	}
+	.green:hover {
+		background: #538018;
+		background: -webkit-gradient(linear, left top, left bottom, from(#6b9d28), to(#436b0c));
+		background: -moz-linear-gradient(top,  #6b9d28,  #436b0c);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#6b9d28', endColorstr='#436b0c');
+	}
+	.green:active {
+		color: #a9c08c;
+		background: -webkit-gradient(linear, left top, left bottom, from(#4e7d0e), to(#7db72f));
+		background: -moz-linear-gradient(top,  #4e7d0e,  #7db72f);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#4e7d0e', endColorstr='#7db72f');
+	}
+	/* button 
+---------------------------------------------- */
+	.button {
+		display: inline-block;
+		zoom: 1; /* zoom and *display = ie7 hack for display:inline-block */
+		*display: inline;
+		vertical-align: baseline;
+		margin: 0 2px;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		font: 14px/100% Arial, Helvetica, sans-serif;
+		padding: .5em 2em .55em;
+		text-shadow: 0 1px 1px rgba(0,0,0,.3);
+		-webkit-border-radius: .5em; 
+		-moz-border-radius: .5em;
+		border-radius: .5em;
+		-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+		box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	}
+	.button:hover {
+		text-decoration: none;
+	}
+	.button:active {
+		position: relative;
+		top: 1px;
+	}
+
+	.bigrounded {
+		-webkit-border-radius: 2em;
+		-moz-border-radius: 2em;
+		border-radius: 2em;
+	}
+	body {
+ 		 background-color:blue; 
+	}
+
+    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" /> 
+    </script>
+    </head>
+    <body bgcolor="blue">
+	<h1 align="center">抽獎一次五塊</h1><!--字至中-->
+<center>
+    <div class="row">
+    <!--
+    <button id="1" class="button black bigrounded" type="button"  onClick="window.alert('我被按了');changeColor('1')">按我</button>
+-->
+    <button id="1" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('1')">按我</button>
+    <button id="2" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('2')">按我</button>
+    <button id="3" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('3')">按我</button> 
+    <button id="4" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('4')">按我</button>
+    <button id="5" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('5')">按我</button>
+    <button id="6" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('6')">按我</button>
+    <button id="7" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('7')">按我</button>
+    <button id="8" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('8')">按我</button> 
+    <button id="9" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('9')">按我</button>
+    <button id="10" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('10')">按我</button>
+    <br>
+    
+    <br>
+    <button id="11" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('11')">按我</button>
+    <button id="12" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('12')">按我</button>
+    <button id="13" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('13')">按我</button>
+    <button id="14" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('14')">按我</button>
+    <button id="15" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('15')">按我</button>
+    <button id="16" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('16')">按我</button>
+    <button id="17" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('17')">按我</button>
+    <button id="18" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('18')">按我</button> 
+    <button id="19" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('19')">按我</button>
+    <button id="20" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('20')">按我</button>
+    <br>
+    
+    <br>
+    <button id="21" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('21')">按我</button>
+    <button id="22" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('22')">按我</button>
+    <button id="23" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('23')">按我</button>
+    <button id="24" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('24')">按我</button>
+    <button id="25" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('25')">按我</button>
+    <button id="26" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('26')">按我</button>
+    <button id="27" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('27')">按我</button>
+    <button id="28" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('28')">按我</button> 
+    <button id="29" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('29')">按我</button>
+    <button id="30" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('30')">按我</button>
+    <br>
+    
+    <br>
+    <button id="31" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('31')">按我</button>
+    <button id="32" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('32')">按我</button>
+    <button id="33" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('33')">按我</button>
+    <button id="34" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('34')">按我</button>
+    <button id="35" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('35')">按我</button>
+    <button id="36" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('36')">按我</button>
+    <button id="37" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('37')">按我</button>
+    <button id="38" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('38')">按我</button> 
+    <button id="39" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('39')">按我</button>
+    <button id="40" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('40')">按我</button>
+    <br>
+    
+    <br>
+    <button id="41" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('41')">按我</button>
+    <button id="42" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('42')">按我</button>
+    <button id="43" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('43')">按我</button>
+    <button id="44" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('44')">按我</button>
+    <button id="45" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('45')">按我</button>
+    <button id="46" class="button gray bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('46')">按我</button>
+    <button id="47" class="button orange bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('47')">按我</button>
+    <button id="48" class="button red bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('48')">按我</button> 
+    <button id="49" class="button green bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('49')">按我</button>
+    <button id="50" class="button black bigrounded col-md-1" type="button"  onClick="window.alert('我被按了');changeColor('50')">按我</button>
+	</div>
+<script>
+/*
+(function() {
+   // your page initialization code here
+   // the DOM will be available here
+	//document.getElementById("37").onclick = "function() {window.alert('................');changeColor('37');}"
+	document.getElementById("37").onclick = setTarget;
+	console.log(document.getElementById("37"));
+
+})();
+
+
+function setTarget() {
+	console.log('hihi yoyo');
+}
+
+
+
+document.getElementById("37").onclick = "function() {window.alert('................');changeColor('37');}"
+*/
+/*
+window.onload=function(){ 
+
+document.getElementById("37").onclick = "function() {window.alert('................');changeColor('37');}"
+console.log(document.getElementById("37"));
+}
+*/
+function changeColor(buttonId) {
+	console.log(buttonId);
+	var Element = document.getElementById(buttonId);
+	console.log(Element);
+	Element.style.background = '#99FFCC';
+	console.log(Element.style.background);
+	var random = Math.random();
+	console.log(random);
+	document.getElementById("37").onclick = "window.alert('................');";
+	console.log(document.getElementById("37"));
+/*
+	for(var i=1;i<=2;i++){
+		var str = document.getElementById('sub_'+i);
+		if(i==num){
+			str.className="btn";
+		}else{
+			str.className="";
+		}
+	}
+*/
+}
+</script>
+    <center>
+    </body>
+</html>
+
